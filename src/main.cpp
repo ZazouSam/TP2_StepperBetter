@@ -50,6 +50,5 @@ int main()
     printf("vitesse_angulaire = %f \r\n", vitesse_angulaire);
     // convertir la vitesse angulaire en vitesse angulaire en deg/s
     target = vitesse_angulaire;
-    
   }
 }
