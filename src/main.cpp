@@ -32,7 +32,6 @@ void fct_step(void)
 int main()
 {
   t.attach(&fct_step, 1.0);
-
   // put your setup code here, to run once:
   // set value of MS3,MS2,MS1 to 0
   MS3 = 0;
