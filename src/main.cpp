@@ -14,7 +14,6 @@ float tempsParPoints; // time per point
 
 float speed(int degreeParSeconde)
 {
-
   float periode;
 
   tempsParPoints = (degreeParSeconde / 360.0) * pointParTour;
