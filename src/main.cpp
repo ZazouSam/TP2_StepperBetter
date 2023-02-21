@@ -12,14 +12,14 @@ int pointParTour = 200; //point par tour
 float vitesse = 0;
 float tempsParPoints; //time per point
 
-float speed(int dps)
+float speed(int degreeParSeconde)
 {
   
-  float period;
+  float periode;
 
-  tempsParPoints = (dps/360.0) * pointParTour;
-  period = (1.0 / tempsParPoints)/2.0;
-  return period;
+  tempsParPoints = (degreeParSeconde/360.0) * pointParTour;
+  periode = (1.0 / tempsParPoints)/2.0;
+  return periode;
 }
 
 void fct_step(void)
@@ -47,8 +47,7 @@ int main()
   {
     float adc = Pot.read_u16();
     float vitesse_angulaire = adc * VITESSE_ANGULAIRE_MAX_DEG_SEC / 65535.0;
-    float test = tempsParPoints *2 * 3.14159265359;
-    printf("vitesse = %f test = %fdegree/s\r\n", vitesse_angulaire, test);
+    printf("vitesse_angulaire = %f \r\n", vitesse_angulaire);
     // convertir la vitesse angulaire en vitesse angulaire en deg/s
     target = vitesse_angulaire;
     
